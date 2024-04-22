@@ -27,7 +27,7 @@ export default function Accordian() {
   console.log(selected, multiple);
   return (
     <div className="wrapper">
-      <button onClick={() => setEnable(!enable)}>Enable multi selection</button>
+      <button className="button1" onClick={() => setEnable(!enable)}>Enable multi selection</button>
       <div className="accordian">
         {data && data.length > 0 ? (
           data.map((dataItem) => (
