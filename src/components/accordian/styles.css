@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  font-family: din-round,sans-serif;
 }
 
 .button1 {
@@ -85,19 +86,22 @@
 }
 
 .item {
-  background: #519290;
+  background: #71ee3b;
+  border-radius: 13px;
   margin-bottom: 10px;
-  padding: 10px 20px;
+  padding: 5px 5px;
 }
 
 .title {
   color: #131212;
   display: flex;
+  padding: 10px;
   justify-content: space-between;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .content {
-  color: rgb(232, 238, 243);
+  color: rgb(231, 233, 235);
   height: auto;
 }
