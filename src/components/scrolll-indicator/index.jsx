@@ -12,7 +12,7 @@ function ScrollIndicator({ url }) {
       const response = await fetch(getUrl);
       const data = await response.json();
 
-      console.log(data);
+      // console.log(data);
 
       if (data && data.products && data.products.length > 0) {
         setData(data.products);
@@ -29,12 +29,12 @@ function ScrollIndicator({ url }) {
   }, [url]);
 
   function handleScrollPercentage() {
-    console.log(
-      document.body.scrollTop,
-      document.documentElement.scrollTop,
-      document.documentElement.scrollHeight,
-      document.documentElement.clientHeight
-    );
+    // console.log(
+    //   document.body.scrollTop,
+    //   document.documentElement.scrollTop,
+    //   document.documentElement.scrollHeight,
+    //   document.documentElement.clientHeight
+    // );
 
     const howMuchScrolled =
       document.body.scrollTop || document.documentElement.scrollTop;
@@ -52,7 +52,7 @@ function ScrollIndicator({ url }) {
     };
   }, []);
 
-  console.log(data, scrollPercentage);
+  // console.log(data, scrollPercentage);
   if(errorMessage) {
     return <div>Error ! {errorMessage}</div>
   }
